@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Intrepid | Login - Signup</title>
+    <link rel="stylesheet" href="style.css" type="text/css" media="all" />
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  </head>
+  <body>
+  <div id="main">
+    <div id="page1">
+      <nav>
+        <div id="brand">
+          <h1>Intrepid</h1>
+        </div>
+        <div id="menu-button" onclick="menuAnimate();">
+          <div class="line1"></div>
+          <div class="line2"></div>
+        </div>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Projects</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Login</a></li>
+        </ul>
+      </nav>
+      <div id="login-content">
+        <div id="login-inputs">
+          <div id="text-form">
+          <h1>Welcome Back !</h1>
+          <h4>Welcome Back Please Enter Your Details.</h4>
+          </div>
+          <div id="form-ids">
+            <form method="get" accept-charset="utf-8" id="form">
+            <div id="mail-box">
+            <h4>Email</h4>
+            <input type="email" name="email" id="email" placeholder="Enter your email"/>
+            </div>
+            <div id="pass-box">
+            <h4>Password</h4>
+            <input type="password" name="password" id="password" placeholder="Enter your password">
+            </div>
+            <button type="submit" id="simple-login">sign in</button>
+            <button type="submit" id="google-login"><i class="bx bxl-google"></i> Sign In With Google</button>
+            <div id="no-account">
+              <h5>Don't have an account? <a class="sign-up-anchor" href="#">Sign Up</a></h5>
+            </div>
+          </form>
+          </div>
+        </div>
+        <div id="circle">
+          <div id="pure-circle"></div>
+          <div id="blurr"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="script.js" type="text/javascript" charset="utf-8"></script>
+  </body>
+</html>

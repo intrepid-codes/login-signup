@@ -1,0 +1,296 @@
+@import url('https://fonts.googleapis.com/css2?family=Urbanist:wght@600;700;800;900&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Urbanist;
+}
+html, body{
+  height: 100%;
+  width: 100%;
+}
+#main{
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+#page1{
+  height: auto;
+  width: 100%;
+  position: relative;
+}
+#page1 nav{
+  height: 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0rem 5rem;
+  box-shadow: 0px 5px 10px rgba(0,0,0,0.1);
+}
+#page1 nav ul{
+  display: flex;
+  gap: 2rem;
+}
+#page1 nav ul li{
+  display: block;
+}
+#page1 nav ul li a{
+  text-decoration: none;
+  color: #1b1b1b;
+  position: relative;
+  text-transform: uppercase;
+}
+#page1 nav ul li a::after{
+  content: '';
+  position: absolute;
+  width: 0%;
+  border-bottom: 2px solid #1b1b1b;
+  bottom: -2px;
+  left: 0;
+  transition: all .3s ease-in-out;
+  border-radius: 4px;
+}
+#page1 nav ul li a:hover:after{
+  width: 100%;
+}
+#menu-button{
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 2rem;
+  width: 3rem;
+  gap: .6rem;
+}
+.line1{
+  height: .2rem;
+  width: 3rem;
+  border-radius: .2rem;
+  background-color: #1b1b1b;
+  position: absolute;
+  margin-bottom: 1rem;
+  transition: all .3s ease-in-out;
+}
+.line2{
+  height: .2rem;
+  width: 3rem;
+  border-radius: .2rem;
+  background-color: #1b1b1b;
+  position: absolute;
+  margin-top: 1rem;
+  transition: all .3s ease-in-out;
+}
+.rotates{
+  transform: rotate(-45deg);
+  margin: 0 !important;
+}
+.rotate{
+  transform: rotate(45deg);
+  margin: 0 !important;
+}
+#login-content{
+  height: calc(100vh - 4rem);
+  width: 100%;
+  display: flex;
+  padding: 0rem 0rem;
+}
+#login-inputs{
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#circle{
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: lightblue;
+  overflow: hidden;
+  justify-content: center;
+}
+#pure-circle{
+  height: 15rem;
+  width: 15rem;
+  background-color: blue;
+  border-radius: 50%;
+  position: relative;
+}
+#blurr{
+  height: 50%;
+  width: 50%;
+  background-color: #ffffff60;
+  backdrop-filter: blur(1rem);
+  position: absolute;
+  bottom: 0;
+}
+#login-inputs>h1{
+  font-size: 2.5rem;
+  font-weight: 900;
+}
+#login-inputs>h4{
+  font-size: .8rem;
+  font-weight: 600;
+  margin-bottom: .4rem;
+}
+#text-form{
+  width: 20rem;
+  text-align: start;
+  justify-content: start;
+}
+#form-ids{
+  margin-top: .5rem;
+  width: 20rem;
+}
+#form{
+  display: block;
+}
+#form h4{
+  font-size: 1rem;
+  font-weight: 600;
+  margin-top: .6rem;
+  margin-bottom: .4rem;
+}
+#form input{
+  border: 1px solid #0000007b;
+  padding: .5rem .8rem;
+  width: 100%;
+  height: 100%;
+}
+#simple-login{
+  display: block;
+  padding: .5rem .8rem;
+  border: none;
+  color: #fff;
+  background-color: blue;
+  border-radius: .2rem;
+  text-transform: capitalize;
+  width: 20rem;
+  margin: .9rem 0rem;
+}
+#google-login{
+  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: .5rem .8rem;
+  border: 1px solid black;
+  border-radius: .2rem;
+  text-transform: capitalize;
+  width: 20rem;
+  margin: .9rem 0rem;
+  color: #fff;
+  border: none;
+  background-color: blue;
+}
+#google-login i{
+  font-size: 1.4rem;
+}
+
+
+@media (max-width:1400px){
+  html{
+    font-size: 84.5%;
+  }
+  
+}
+@media (max-width:940px){
+  html{
+    font-size: 64.5%;
+  }
+  #page1 nav{
+    padding: 0rem 2rem;
+  }
+  #page1 nav ul{
+    z-index: 1;
+    position: fixed;
+    display: block;
+    top: 4rem;
+    height: calc(100vh - 4rem);
+    width: 100%;
+    background-color: #1b1b1b;
+    left: 100%;
+    padding: 6rem;
+    transition: all .6s ease-in-out;
+  }
+  #page1 nav ul li{
+    display: block;
+    margin-top: 2rem;
+  }
+  #page1 nav ul li a{
+    color: #fff;
+    font-size: 4rem;
+    transition: all .3s ease-in-out;
+  }
+  #page1 nav ul li a:hover{
+    color: yellow;
+  }
+  #menu-button{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 2rem;
+  width: 3rem;
+  gap: .6rem;
+}
+#page1 nav ul li a::after{
+  border-bottom: 2px solid #fff;
+}
+#login-content{
+    z-index: -1;
+    flex-direction: column;
+  }
+  #login-inputs{
+    height: auto;
+    position: absolute;
+    top: 40%;
+  }
+  #circle{
+    height: 30%;
+    background-color: none;
+    order: 1;
+    background-color: #FFF;
+    top: 10%;
+  }
+  #pure-circle{
+    height: 10rem;
+    width: 10rem;
+    display: block;
+  }
+  #login-inputs{
+    order: 2;
+  }
+  #blurr{
+    top: 4rem;
+    height: 15%;
+    width: 100%;
+  }
+  #text-form{
+  width: 80%;
+  text-align: start;
+  justify-content: start;
+}
+#form-ids{
+  margin-top: .5rem;
+  width: 80%;
+}
+#simple-login{
+  display: block;
+  padding: .8rem .8rem;
+  width: 100%;
+}
+#google-login{
+  padding: .8rem .8rem;
+  width: 100%;
+}
+#form input{
+  padding: .8rem .8rem;
+}
+#no-account h5{
+  font-size: 1.2rem;
+}
+}
